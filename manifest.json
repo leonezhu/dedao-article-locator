@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "得到文章定位器",
+  "version": "1.0",
+  "description": "自动定位得到专栏当前阅读文章在侧边栏的位置",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "https://www.dedao.cn/*"
+  ],
+  "action": {
+    "default_title": "定位当前文章"
+  },
+  "content_scripts": [{
+    "matches": ["https://www.dedao.cn/*"],
+    "js": ["content.js"]
+  }]
+}
