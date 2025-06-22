@@ -12,7 +12,17 @@
     "https://www.dedao.cn/*"
   ],
   "action": {
-    "default_title": "定位当前文章"
+    "default_title": "定位当前文章",
+    "default_icon": {
+      "16": "icons/dedao.png",
+      "48": "icons/dedao.png",
+      "128": "icons/dedao.png"
+    }
+  },
+  "icons": {
+    "16": "icons/dedao.png",
+    "48": "icons/dedao.png",
+    "128": "icons/dedao.png"
   },
   "content_scripts": [{
     "matches": ["https://www.dedao.cn/*"],
